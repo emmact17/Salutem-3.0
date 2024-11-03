@@ -93,7 +93,7 @@ tbody tr:nth-child(even) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+  background-color: rgb(0, 0, 0); /* Fondo oscuro */
   z-index: 9999; /* Asegura que el loader esté encima de otros elementos */
   transition: opacity 0.5s ease; /* Animación de transición para la opacidad */
   opacity: 1; /* Opacidad inicial completa */
