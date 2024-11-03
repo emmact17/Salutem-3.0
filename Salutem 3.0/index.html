@@ -1,50 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IMC</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main>
-    <h2>Cálculo IMC</h2>
-    <div id="calculator">
-      <input type="number" id="weight" placeholder="Peso (kg)">
-      <input type="number" id="height" placeholder="Altura (cm)">
-      <button onclick="calculate()">Calcular IMC </button>
-      </div>
-      <div id="result"></div>
-  
-  <table>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALUTEM</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div id="loader">
+      <img src="salutem.png" alt="Loader">
+    </div>
+    <div class="container">
+      <h1>Calculadora IMC</h1>
+      <div id="calculator">
+	<input type="number" id="weight" placeholder="Peso (kg)">
+	<input type="number" id="height" placeholder="Altura (cm)">
+	<button onclick="calculate()">Calcular IMC </button>
+    </div>
+    <div id="result"></div>
+
+    <table>
       <thead>
-          <tr>
-              <th>Rango de IMC</th>
-              <th>Estado</th>
-          </tr>
+	<tr>
+	  <th>Rango de IMC</th>
+	  <th>Estado</th>
+	</tr>
       </thead>
       <tbody>
-          <tr>
-              <td>Menos de 18.5</td>
-              <td>Bajo Peso</td>
-          </tr>
-          <tr>
-              <td>18.5 - 24.9</td>
-              <td>Peso Normal</td>
-          </tr>
-          <tr>
-              <td>25 - 29.9</td>
-              <td>Sobrepeso</td>
-          </tr>
-          <tr>
-              <td>30 o Mas</td>
-              <td>Obesidad</td>
-          </tr>
+	<tr>
+	  <td>Menos de 18.5</td>
+	  <td>Peso Bajo</td>
+	</tr>
+	<tr>
+	  <td>18.5 - 24.9</td>
+	  <td>Peso Normal</td>
+	</tr>
+	<tr>
+	  <td>25 - 29.9</td>
+	  <td>Sobrepeso</td>
+	</tr>
+	<tr>
+	  <td>30 o Mas</td>
+	  <td>Obesidad</td>
+	</tr>
       </tbody>
-  </table>
-  <h3 id="advice"></h3>
-  </div>
-<script src="main.js"></script>
-</body>
+    </table>
+    <h3 id="advice"></h3>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
